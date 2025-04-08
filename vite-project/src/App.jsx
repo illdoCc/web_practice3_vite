@@ -7,12 +7,12 @@ function App() {
     const [isActive, setIsActive] = useState("Inbox");
     
     // load from local
-    const isFirstRender = React.useRef(true);
+    // const isFirstRender = React.useRef(true);
     React.useEffect(() => {
-        if (isFirstRender.current) {
-          isFirstRender.current = false;
-          return;
-        }
+        // if (isFirstRender.current) {
+        //   isFirstRender.current = false;
+        //   return;
+        // }
         const storedProjects = localStorage.getItem("projectList");
         if(!storedProjects) return;
 

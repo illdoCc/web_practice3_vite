@@ -121,13 +121,13 @@ function ContentArea({projects = [], isActive}){
     }, [tasks, projects]);
     
     // load from local
-    const isFirstRender = React.useRef(true); 
+    // const isFirstRender = React.useRef(true); 
     React.useEffect(() => {
         // only render once
-        if (isFirstRender.current) {
-            isFirstRender.current = false;
-            return;
-        }
+        // if (isFirstRender.current) {
+        //     isFirstRender.current = false;
+        //     return;
+        // }
 
         const storedProjects = localStorage.getItem("projectList");
         const projectList = JSON.parse(storedProjects);
